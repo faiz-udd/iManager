@@ -1,0 +1,26 @@
+use employeemanagementsystem
+show tables
+INSERT INTO project (ID, Title, StartDate, DueDate, Manager, Status)
+VALUES
+    (1, 'Project A', '2023-01-10', '2023-02-10', 'Haris', 'In Progress'),
+    (2, 'Project B', '2023-01-15', '2023-02-15', 'Ana', 'Pending'),
+    (3, 'Project C', '2023-01-20', '2023-02-20', 'Rimsha', 'Completed');
+    
+    select * from project
+    
+    
+    INSERT INTO Tasks (TaskID, TaskTitle, Status, Assignee, StartDate, ProjectID)
+VALUES
+    (1, 'Task 1', 'In Progress', 'John Doe', '2023-01-10', 1),  -- Assuming 'ProjectID' 1 exists in 'Projects' table
+    (2, 'Task 2', 'Pending', 'Jane Smith', '2023-01-15', 2),    -- Assuming 'ProjectID' 2 exists in 'Projects' table
+    (3, 'Task 3', 'Completed', 'Bob Johnson', '2023-01-20', 3);  -- Assuming 'ProjectID' 3 exists in 'Projects' table
+
+select * from tasks
+
+INSERT INTO Manager (ManagerID, Name, Fname, DOB, Salary, Address, PhoneNumber, Email, CNIC, Designation)
+VALUES
+    (1, 'Asad Ali', 'Asad Khan.', '1980-05-15', 75000.00, '123 Main St', '123-456-7890', 'asad@example.com', '12345-6789123-0', 'Senior Manager'),
+    (2, 'Anusha Anu', 'Ashneer.', '1985-08-22', 65000.50, '456 RWP', '987-654-3210', 'anusha@example.com', '98765-4321987-1', 'Project Manager'),
+    (3, 'Azam', 'Azam Khan.', '1975-03-10', 80000.75, '789 ISB', '567-890-1234', 'azam@example.com', '56789-0123456-2', 'Manager of Operations');
+    
+    select * from Manager
